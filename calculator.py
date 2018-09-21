@@ -3,11 +3,7 @@ class Calculator:
 
     def add(x, y):
         """Add Function"""
-        try:
-            return x + y
-
-        except TypeError as e:
-            raise TypeError("Invalid Value")
+        return x + y
 
     def subtract(x, y):
         """Subtract Function"""
@@ -19,11 +15,7 @@ class Calculator:
 
     def divide(x, y):
         """Divide Function"""
-        try:
-            if y == 0:
-                raise ValueError('Can not divide by zero!')
+        if y == 0:
+            raise ValueError('Can not divide by zero!')
 
-            return x / y
-
-        except TypeError as e:
-            raise TypeError("Invalid Value")
+        return x / y
